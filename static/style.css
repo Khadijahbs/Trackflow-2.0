@@ -1,0 +1,137 @@
+/* Base styles */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FADADD; /* Soft pastel pink */
+    color: #3D1E2F; /* Deep plum for readability */
+}
+
+/* Content container */
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.15);
+    text-align: center;
+    border: 2px solid #FFE0EC;
+}
+
+/* Headings */
+.content h1 {
+    color: #3D1E2F;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.content h4 {
+    color: #FF69B4;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* Table */
+.content table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.content table th,
+.content table td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #F0E6ED;
+}
+
+.content table th {
+    background: linear-gradient(to bottom, #FFB6C1, #FF69B4);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.content table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Links & Buttons */
+.content table a,
+.content .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    font-size: 0.95em;
+}
+
+/* Action buttons (Update, Delete, etc.) */
+.content .btn-update {
+    background-color: #FFB6C1;
+    color: #3D1E2F;
+    border: 2px solid #FF69B4;
+}
+
+.content .btn-update:hover {
+    background-color: #FF69B4;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(255, 105, 180, 0.3);
+}
+
+/* Center buttons in table cells */
+.content table td .btn,
+.content table td a {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+/* Inputs */
+.content table input {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #FFB6C1;
+    border-radius: 10px;
+    background-color: #FFF9FB;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.content table input:focus {
+    outline: none;
+    border-color: #FF69B4;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+/* Add Button (e.g., #add-btn) */
+#add-btn {
+    background: linear-gradient(to right, #FF69B4, #FF85A2);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    transition: all 0.3s ease;
+}
+
+#add-btn:hover {
+    background: linear-gradient(to right, #FF4FA3, #FF69B4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(255, 105, 180, 0.4);
+}
