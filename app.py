@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime 
 
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(__name__,static_folder='static', template_folder='templates')
 #Scss(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///database.db"
